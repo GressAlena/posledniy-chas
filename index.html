@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Последний час — ломбард на краю тумана</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+<div id="game">
+  <canvas id="scene"></canvas>
+  <canvas id="hd"></canvas>
+  <div id="pops"></div>
+
+  <div id="hud" class="hidden">
+    <span class="h-cell">Ночь <b id="h-night">1</b>/7</span>
+    <span class="h-cell h-time" id="h-time">21:30</span>
+    <span class="h-cell h-money" data-tip="Гроши в кассе"><i class="coin"></i><b id="h-money">0</b></span>
+    <span class="h-cell h-debt" data-tip="Остаток долга Кредитору. Проценты начисляются на рассвете.">Долг <b id="h-debt">0</b></span>
+    <span class="h-cell h-bar" data-tip="Рассудок. Упадёт до нуля — конец. Чай, отвар Агаты и исповедь его восстанавливают."><i>Рассудок</i><span class="bar"><span id="h-sanity"></span><em id="h-sanmax"></em></span></span>
+    <span class="h-cell h-bar" data-tip="Репутация: больше посетителей, толще кошельки, щедрее цены."><i>Репутация</i><span class="bar rep"><span id="h-rep"></span></span></span>
+    <span class="h-btns">
+      <button id="b-candle" class="hidden" data-tip="Полынная свеча: зажги при посетителе, чтобы узнать, живой ли он.">Свеча ×0</button>
+      <button id="b-tea" data-tip="Выпить чай: +25 рассудка">Чай ×0</button>
+      <button id="b-pockets" data-tip="Карманы: найденные вещи, письма, ключи (I)">Карманы</button>
+      <button id="b-shelf" data-tip="Витрина и кладовая">Лавка</button>
+      <button id="b-ledger" data-tip="Долг, правила дяди, дела и слухи">Гроссбух</button>
+      <button id="b-set" data-tip="Настройки">⚙</button>
+    </span>
+  </div>
+
+  <div id="toast"></div>
+  <div id="card" class="hidden"></div>
+
+  <div id="bottom" class="hidden">
+    <div id="dlg">
+      <div id="dlg-name"></div>
+      <div id="dlg-body">
+        <div id="dlg-text"></div>
+        <div id="dlg-choices"></div>
+      </div>
+      <div id="dlg-next">▼</div>
+    </div>
+    <div id="trade" class="hidden"></div>
+    <div id="sale" class="hidden"></div>
+  </div>
+
+  <div id="screen" class="hidden"></div>
+  <div id="modal" class="hidden"><div id="modal-box"></div></div>
+  <div id="tip" class="hidden"></div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/econ.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/art.js"></script>
+<script src="js/hd.js"></script>
+<script src="js/lavka.js"></script>
+<script src="js/main.js"></script>
+<script src="js/story.js"></script>
+<script src="js/town.js"></script>
+<script src="js/visions.js"></script>
+<script src="js/film.js"></script>
+<script src="js/intro.js"></script>
+<script src="js/endings.js"></script>
+<script src="js/puzzles.js"></script>
+<script src="js/quest.js"></script>
+<script src="js/pockets.js"></script>
+<script src="js/room.js"></script>
+<script src="js/street.js"></script>
+</body>
+</html>
